@@ -1,0 +1,86 @@
+\documentclass{ximera}
+
+\prerequisites{geometry}
+\outcomes{quadratures}
+
+\preambleinput{../preamble.tex}
+
+\title{Squaring the circle with lunes}
+\begin{document}
+\begin{abstract}
+In this activity we investigate a proposed method of squaring the circle.
+\end{abstract}
+\maketitle
+
+It is impossible to square the circle with compass and straightedge
+alone. However, it is still interesting to think about what one's
+strategy might be to achieve this impossible goal. We will work with a
+circle of diameter $D$.
+\begin{image}
+\begin{tikzpicture}[geometryDiagrams]
+\draw (0,0) circle (1cm);
+\draw[thin] (-1,0)--(1,0);
+\node at (0,-.2) {$D$};
+\end{tikzpicture}
+\end{image}
+
+
+\begin{question}
+Consider a circle of \textbf{radius} $D$. What is the relationship
+between the area of the original circle and this new circle?
+\end{question}
+
+
+\begin{question}
+Consider a circle of \textbf{radius} $D$. We claim that we can
+inscribe a regular hexagon of side length $D$ in this circle.
+\begin{image}
+\begin{tikzpicture}[geometryDiagrams]
+\draw[thin] (0,0) circle (2cm);
+\draw (2,0)--({2*cos(60)},{2*sin(60)});
+\draw ({2*cos(60)},{2*sin(60)})--({2*cos(120)},{2*sin(120)});
+\draw ({2*cos(120)},{2*sin(120)})--({2*cos(180)},{2*sin(180)});
+\draw ({2*cos(180)},{2*sin(180)})--({2*cos(240)},{2*sin(240)});
+\draw ({2*cos(240)},{2*sin(240)})--({2*cos(300)},{2*sin(300)});
+\draw ({2*cos(300)},{2*sin(300)})--(2,0);
+\draw[decoration={brace,raise=.2cm},decorate,thin] ({2*cos(120)},{2*sin(120)})--({2*cos(180)},{2*sin(180)});
+
+\node at (-1,.6) {$D$};
+\end{tikzpicture}
+\end{image}
+Explain how you know this is true.
+\end{question}
+
+
+\begin{question}
+Still considering a circle of \textbf{radius} $D$, add some lunes.
+\begin{image}
+\begin{tikzpicture}[geometryDiagrams]
+\draw (0,0) circle (2cm);
+\draw[thin] (2,0)--({2*cos(60)},{2*sin(60)});
+\draw[thin] ({2*cos(60)},{2*sin(60)})--({2*cos(120)},{2*sin(120)});
+\draw[thin] ({2*cos(120)},{2*sin(120)})--({2*cos(180)},{2*sin(180)});
+\draw[thin] ({2*cos(180)},{2*sin(180)})--({2*cos(240)},{2*sin(240)});
+\draw[thin] ({2*cos(240)},{2*sin(240)})--({2*cos(300)},{2*sin(300)});
+\draw[thin] ({2*cos(300)},{2*sin(300)})--(2,0);
+
+\draw (2,0) arc (-60:120:1cm);
+\draw ({2*cos(60)},{2*sin(60)}) arc (0:180:1cm);
+\draw ({2*cos(120)},{2*sin(120)}) arc (60:240:1cm);
+\draw ({2*cos(180)},{2*sin(180)}) arc (120:300:1cm);
+\draw ({2*cos(240)},{2*sin(240)}) arc (180:360:1cm);
+\draw ({2*cos(300)},{2*sin(300)}) arc (-120:60:1cm);
+\end{tikzpicture}
+\end{image}
+Now write two expressions for the area of the entire figure, one built
+from the area of a regular hexagon and the area of the original
+circle, and the other built from the area of the larger circle and the
+area of the lunes.
+\end{question}
+
+\begin{question}
+Explain how this gives a method for finding the quadrature of a
+circle, assuming you know how to find the quadrature of lunes.
+\end{question}
+
+\end{document}
