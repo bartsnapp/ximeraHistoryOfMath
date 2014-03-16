@@ -1,36 +1,52 @@
-\documentclass[handout]{ximera}
+\documentclass[numbers,handout]{ximera}
 %% handout
 %% nohints
 %% newpage
 
 \input{preamble.tex}
 
+\let\masterdocument\document
+\let\endmasterdocument\enddocument
 
-\begin{document}
-\title{History of mathematics}
-\author{Bart Snapp}
-\maketitle
+
+
+\begin{masterdocument}
+\begin{titlepage}
+    \vspace*{1in}
+    \begin{center}
+      {\Huge \bfseries History of mathematics}\\[0.5cm]
+      {\Large Bart Snapp}\\[0.4cm]
+      This document was typeset on \today.
+    \end{center}
+    %\vspace*{\fill}
+  \end{titlepage}
+
 \tableofcontents
-\input{./whatIsANumber/whatIsANumberSource.tex}
-\input{./measuringWithFractions/measuringWithFractionsSource.tex}
-\input{./theMethodOfFalsePosition/theMethodOfFalsePositionSource.tex}
-\input{./babylonianNumbers/babylonianNumbersSource.tex}
-\input{./rationalNumbersAndSimilarity/rationalNumbersAndSimilaritySource.tex}
-\input{./pythagoreanMeans/pythagoreanMeansSource.tex}
-\input{./computingQuadratures/computingQuadraturesSource.tex}
-\input{./squaringTheCircleWithLunes/squaringTheCircleWithLunesSource.tex}
-\input{./euclidsElements/euclidsElementsSource.tex}
-\input{./trianglesOnACone/trianglesOnAConeSource.tex}
-\input{./thePythagoreanTheorem/thePythagoreanTheoremSource.tex}
-\input{./theUniqueFactorizationTheorem/theUniqueFactorizationTheoremSource.tex}
-\input{./heronsFormula/heronsFormulaSource.tex}
-\input{./solvingEquations/solvingEquationsSource.tex}
-\input{./complexNumbersFromDifferentAngles/complexNumbersFromDifferentAnglesSource.tex}
-\input{./deMoivreSavesTheDay/deMoivreSavesTheDaySource.tex}
-\input{./theBinomialTheoremAndPi/theBinomialTheoremAndPiSource.tex}
-\input{./newtonAndKepler/newtonAndKeplerSource.tex}
-\input{./leibnizAndSeries/leibnizAndSeriesSource.tex}
-\input{./bernoulliEulerAndSeries/bernoulliEulerAndSeriesSource.tex}
-\input{./cantorCan/cantorCanSource.tex}
 
-\end{document}
+\renewcommand{\documentclass}{\setbox0\vbox}
+\renewcommand{\preambleinput}{\setbox0\vbox}
+\renewenvironment{document}{}{}
+
+\input{./whatIsANumber/whatIsANumber.tex}
+\input{./measuringWithFractions/measuringWithFractions.tex}
+\input{./theMethodOfFalsePosition/theMethodOfFalsePosition.tex}
+\input{./babylonianNumbers/babylonianNumbers.tex}
+\input{./rationalNumbersAndSimilarity/rationalNumbersAndSimilarity.tex}
+\input{./pythagoreanMeans/pythagoreanMeans.tex}
+\input{./computingQuadratures/computingQuadratures.tex}
+\input{./squaringTheCircleWithLunes/squaringTheCircleWithLunes.tex}
+\input{./euclidsElements/euclidsElements.tex}
+\input{./trianglesOnACone/trianglesOnACone.tex}
+\input{./thePythagoreanTheorem/thePythagoreanTheorem.tex}
+\input{./theUniqueFactorizationTheorem/theUniqueFactorizationTheorem.tex}
+\input{./heronsFormula/heronsFormula.tex}
+\input{./solvingEquations/solvingEquations.tex}
+\input{./complexNumbersFromDifferentAngles/complexNumbersFromDifferentAngles.tex}
+\input{./deMoivreSavesTheDay/deMoivreSavesTheDay.tex}
+\input{./theBinomialTheoremAndPi/theBinomialTheoremAndPi.tex}
+\input{./newtonAndKepler/newtonAndKepler.tex}
+\input{./leibnizAndSeries/leibnizAndSeries.tex}
+\input{./bernoulliEulerAndSeries/bernoulliEulerAndSeries.tex}
+\input{./cantorCan/cantorCan.tex}
+
+\end{masterdocument}
