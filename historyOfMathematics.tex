@@ -7,6 +7,7 @@
 
 \let\masterdocument\document
 \let\endmasterdocument\enddocument
+\let\masterinput\input
 
 
 
@@ -24,29 +25,30 @@
 \tableofcontents
 
 \renewcommand{\documentclass}{\setbox0\vbox}
-\renewcommand{\preambleinput}{\setbox0\vbox}
+\renewcommand{\input}{\setbox0\vbox}
 \renewenvironment{document}{}{}
 
-\input{./whatIsANumber/whatIsANumber.tex}
-\input{./measuringWithFractions/measuringWithFractions.tex}
-\input{./theMethodOfFalsePosition/theMethodOfFalsePosition.tex}
-\input{./babylonianNumbers/babylonianNumbers.tex}
-\input{./rationalNumbersAndSimilarity/rationalNumbersAndSimilarity.tex}
-\input{./pythagoreanMeans/pythagoreanMeans.tex}
-\input{./computingQuadratures/computingQuadratures.tex}
-\input{./squaringTheCircleWithLunes/squaringTheCircleWithLunes.tex}
-\input{./euclidsElements/euclidsElements.tex}
-\input{./trianglesOnACone/trianglesOnACone.tex}
-\input{./thePythagoreanTheorem/thePythagoreanTheorem.tex}
-\input{./theUniqueFactorizationTheorem/theUniqueFactorizationTheorem.tex}
-\input{./heronsFormula/heronsFormula.tex}
-\input{./solvingEquations/solvingEquations.tex}
-\input{./complexNumbersFromDifferentAngles/complexNumbersFromDifferentAngles.tex}
-\input{./deMoivreSavesTheDay/deMoivreSavesTheDay.tex}
-\input{./theBinomialTheoremAndPi/theBinomialTheoremAndPi.tex}
-\input{./newtonAndKepler/newtonAndKepler.tex}
-\input{./leibnizAndSeries/leibnizAndSeries.tex}
-\input{./bernoulliEulerAndSeries/bernoulliEulerAndSeries.tex}
-\input{./cantorCan/cantorCan.tex}
+\masterinput{./whatIsANumber/whatIsANumber.tex}
+\masterinput{./measuringWithFractions/measuringWithFractions.tex}
+\masterinput{./theMethodOfFalsePosition/theMethodOfFalsePosition.tex}
+\masterinput{./babylonianNumbers/babylonianNumbers.tex}
+\masterinput{./rationalNumbersAndSimilarity/rationalNumbersAndSimilarity.tex}
+\masterinput{./pythagoreanMeans/pythagoreanMeans.tex}
+\masterinput{./computingQuadratures/computingQuadratures.tex}
+\masterinput{./squaringTheCircleWithLunes/squaringTheCircleWithLunes.tex}
+\masterinput{./euclidsElements/euclidsElements.tex}
+\masterinput{./trianglesOnACone/trianglesOnACone.tex}
+\masterinput{./thePythagoreanTheorem/thePythagoreanTheorem.tex}
+\masterinput{./theUniqueFactorizationTheorem/theUniqueFactorizationTheorem.tex}
+\masterinput{./heronsFormula/heronsFormula.tex}
+\masterinput{./solvingEquations/solvingEquations.tex}
+\masterinput{./complexNumbersFromDifferentAngles/complexNumbersFromDifferentAngles.tex}
+\masterinput{./deMoivreSavesTheDay/deMoivreSavesTheDay.tex}
+\masterinput{./theBinomialTheoremAndPi/theBinomialTheoremAndPi.tex}
+\masterinput{./newtonAndKepler/newtonAndKepler.tex}
+\masterinput{./leibnizAndSeries/leibnizAndSeries.tex}
+\masterinput{./bernoulliEulerAndSeries/bernoulliEulerAndSeries.tex}
+\masterinput{./cantorCan/cantorCan.tex}
+\masterinput{./theFoundationsOfGeometry/theFoundationsOfGeometry.tex}
 
 \end{masterdocument}
